@@ -67,3 +67,16 @@ docker inspect <container_id> | grep IPAddress
 ```
 docker pull devopsjourney1/myjenkinsagents:python
 ```
+
+## Build your own image
+builds image from Dockerfile
+```
+docker build -t jenkins101 .
+```
+it will create an image in docker desktop locally
+![Alt text](image.png)
+
+push to docker hub
+```
+docker push account_name/jenkins101
+```
